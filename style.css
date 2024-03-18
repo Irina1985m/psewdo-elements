@@ -1,0 +1,30 @@
+p{
+    color:blue;
+    font-size: 2em;
+}
+h1{
+    width: 50%;
+    margin: auto;
+    background-color: cornflowerblue;
+     
+    position: relative;
+
+    text-align: center;
+  
+}
+h1::before{
+content: url(./assets/icons/access-point-minus.svg);
+display: inline-block;
+width: 20px;
+height: 20px;
+background-color: aqua;
+
+position: absolute;
+top: 0;
+left:0;
+
+}
+h1::after{
+content: '\1F60D';
+display: inline-block;
+}
