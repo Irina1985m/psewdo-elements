@@ -8,8 +8,8 @@
     background-color: #eee;
 }
 .item{
-    width: 50px;
-    height: 50px;
+    /* width: 50px;
+    height: 50px; */
     border: 2px solid #4ff;
     background-color: #e50;
     font-size: 2em;
@@ -17,9 +17,17 @@
 
 }
 .flex-parent{
+    min-height: 60vh;
     display: flex;
     /* display: inline-flex; */
-    flex-direction: row;
+    /* flex-direction: column;
+    flex-wrap:wrap; */
+    flex-flow: row-reverse wrap;
+
+    align-content: flex-end;
     justify-content:space-between;
-    align-items: stretch;
+    align-items:flex-end;
+}
+.margin-left-auto{
+    margin-left: auto;
 }
